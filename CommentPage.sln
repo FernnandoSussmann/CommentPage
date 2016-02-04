@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{68F8B35F-9963-4034-A16F-4A27C82C6D09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8E996261-C571-4D8E-8E27-9AA279671CCC}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CommentPage", "src\CommentPage\CommentPage.xproj", "{0C5ED0C3-9CAC-4110-A6AF-2F8C8DEFC3E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C5ED0C3-9CAC-4110-A6AF-2F8C8DEFC3E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C5ED0C3-9CAC-4110-A6AF-2F8C8DEFC3E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C5ED0C3-9CAC-4110-A6AF-2F8C8DEFC3E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C5ED0C3-9CAC-4110-A6AF-2F8C8DEFC3E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C5ED0C3-9CAC-4110-A6AF-2F8C8DEFC3E6} = {68F8B35F-9963-4034-A16F-4A27C82C6D09}
+	EndGlobalSection
+EndGlobal

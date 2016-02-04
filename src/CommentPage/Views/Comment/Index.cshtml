@@ -1,0 +1,38 @@
+@model IEnumerable<CommentPage.Models.Comment>
+
+@{
+    ViewData["Title"] = "Comments";
+}
+
+<h2>Comments</h2>
+
+<p>
+    <!--<a asp-action="Create">Create New</a>-->
+</p>
+<table class="table">
+    @foreach (var item in Model)
+    {
+        <tr style="background-color:#000000 ; color:#FFFFFF">
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+        </tr>
+        <tr>
+            <td>
+               @Html.DisplayFor(modelItem => item.Commentary)
+            </td>
+        </tr>
+        <tr style="background-color:#000000 ; color:#FFFFFF">
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Create" asp-route-id="@item.ID">Reply</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>|
+                <a asp-action="Reply" asp-route-id="@item.ID">Replies</a>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    }
+</table>
